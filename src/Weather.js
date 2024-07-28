@@ -46,9 +46,6 @@ export default function Weather() {
           <li>Description: {weather.description}</li>
           <li>Humidity: {weather.humidity}%</li>
           <li>Wind: {Math.round(weather.wind)}MPH</li>
-          <li>
-            icon: <img src={weather.icon} alt={weather.description} />
-          </li>
         </ul>
       </div>
     );
