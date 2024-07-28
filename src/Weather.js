@@ -8,6 +8,7 @@ export default function Weather() {
 
   function displayWeather(response) {
     setLoaded(true);
+    setWeather({
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
